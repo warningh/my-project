@@ -1,0 +1,152 @@
+*{
+    font-family: monospace;
+    font-size: 20px;
+    box-sizing: border-box;
+}
+
+table,
+th,
+td {
+    color: rgb(70, 69, 69);
+    background-color: aliceblue;
+
+}
+
+th,
+td {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+body {
+    background-image: url(https://www.rajshahiexpress.com/wp-content/uploads/2023/03/333068759_913563306351468_5811454232633826536_n.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* margin: 15px 15px 0 15px; */
+    }
+    div.s1 {
+        display: flex;
+        justify-content: right;
+    }    
+    footer {
+        width: 90%;
+    }  
+    
+    .srch {
+        padding: 30px;
+    }
+    .srch .search-container {
+        width: 40%;
+        font-family: Arial, sans-serif;
+    }
+    .search-container {
+        margin-bottom: 20px;
+        width: 30%;
+    }
+    .search-results {
+        margin-top: 30px;
+    }
+    .result-item {
+        padding: 10px;
+        border: 1px solid #ccc;
+        margin-bottom: 10px;
+    }
+
+.hs a {
+    color: rgb(17, 210, 248);
+    text-decoration: none;
+    padding: 30px;
+
+}
+    .hs a:hover {
+        color: rgb(255, 255, 255);
+    }
+
+a{
+    color: rgb(128, 223, 244);
+}
+.tps2 tr th p {
+    border-radius: 10px;
+}
+.form {
+    display: flex;
+    width: 100%;
+    gap: 100px;
+}
+.address {
+    margin-right: 300px;
+}
+.main2 {
+    width: 1000px;
+    margin: auto;
+
+}
+.container {
+    background-color: aliceblue;
+    border-radius: 8px;
+    margin-top: 8px;
+    display: flex;
+    margin-right: 100px;
+    margin-bottom: 10px;
+    gap: 00px;
+}
+.table {
+    margin: auto;
+}
+.address {
+    margin-top: 50px;
+    margin-right: 75px;
+    color: rgb(76, 76, 77)
+}
+input[type=text],input[type=email]
+,input[type=select]
+,input[type=password],textarea,select{
+    border: 1.5px solid rgb(20, 170, 147);
+    width: 100%;
+}
+input[type=submit]{
+    background-color: rgb(53, 157, 11);
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-size: 15px;
+    padding: 5px;
+    margin-bottom: 10px;
+
+ 
+}
+input[type=reset]{
+    background-color: rgb(244, 35, 35);
+    border-radius: 5px;
+    border: none;
+    color: white;
+
+    font-size: 15px;
+    padding: 5px;
+    margin-bottom: 10px;
+
+}
+.button {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+
+
+footer {
+    background-color: gray;
+    text-align: center;
+padding: 3px ;
+    border-radius: 8px;
+    color: white;
+    font-size: 20px;
+    margin-top: 8px;
+}
+.nav a {
+    color: rgb(17, 210, 248);
+    text-decoration: none;
+    padding: 8px;
+    font-size: 20px;
+}

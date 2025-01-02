@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Functionality</title>
+</head>
+<body>
+    <h1>Search Example</h1>
+    <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Type your query..." />
+        <button onclick="performSearch()">Search</button>
+    </div>
+    <div class="search-results" id="resultsContainer"></div>
+
+    <script>
+        // Sample dataset
+        const data = [
+            "Learn HTML",
+            "Learn CSS",
+            "Learn JavaScript",
+            "Learn Python",
+            "Learn React",
+            "Learn Node.js",
+            "Learn AI and Machine Learning"
+        ];
+
+        // Function to perform the search
+        function performSearch() {
+            const query = document.getElementById('searchInput').value.toLowerCase();
+            const resultsContainer = document.getElementById('resultsContainer');
+            resultsContainer.innerHTML = ''; // Clear previous results
+
+            if (!query) {
+                resultsContainer.innerHTML = '<p>Please enter a search query.</p>';
+                return;
+            }
+
+            const results = data.filter(item => item.toLowerCase().includes(query));
+
+            if (results.length === 0) {
+                resultsContainer.innerHTML = '<p>No results found.</p>';
+            } else {
+                results.forEach(result => {
+                    const div = document.createElement('div');
+                    div.className = 'result-item';
+                    div.textContent = result;
+                    resultsContainer.appendChild(div);
+                });
+            }
+        }
+    </script>
+</body>
+</html>

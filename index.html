@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>আমাদের রাজশাহী</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+
+<body>
+    <!-- search bar -->
+    <div style="display: flex;justify-content: center;">
+        <h1 style="color: rgb(232, 230, 230); background-color: #525050;border-radius: 20px;padding: 15px;">আমাদের রাজশাহী</h1> <br><br><br>
+
+    </div>
+    <!-- search option -->
+    <div class="srch">
+        <h1 style="color: aqua;">Search Example</h1>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Type your query..." />
+            <button onclick="performSearch()">Search</button>
+        </div>
+        <div class="search-results" id="resultsContainer"></div>
+    
+        <script>
+            // Sample dataset
+            const data = [
+                "Learn HTML",
+                "Learn CSS",
+                "Learn JavaScript",
+                "Learn Python",
+                "Learn React",
+                "Learn Node.js",
+                "Learn AI and Machine Learning"
+            ];
+    
+            // Function to perform the search
+            function performSearch() {
+                const query = document.getElementById('searchInput').value.toLowerCase();
+                const resultsContainer = document.getElementById('resultsContainer');
+                resultsContainer.innerHTML = ''; // Clear previous results
+    
+                if (!query) {
+                    resultsContainer.innerHTML = '<p>Please enter a search query.</p>';
+                    return;
+                }
+    
+                const results = data.filter(item => item.toLowerCase().includes(query));
+    
+                if (results.length === 0) {
+                    resultsContainer.innerHTML = '<p>No results found.</p>';
+                } else {
+                    results.forEach(result => {
+                        const div = document.createElement('div');
+                        div.className = 'result-item';
+                        div.textContent = result;
+                        resultsContainer.appendChild(div);
+                    });
+                }
+            }
+        </script>
+    
+    
+    </div>
+
+    <div class="hs">
+        <a href="index.html">Home</a>
+        <a href="sign-up.html">Sign up</a>
+    </div><br><br><br>
+    <!-- rajshahi -->
+    <div style="padding: 25px;">
+        <p style="text-align: justify;padding: 25px; color: white;border-radius: 10px; background-color: rgb(55, 55, 56);"><strong>রাজশাহী</strong> একটি ঐতিহাসিক, সাংস্কৃতিক, প্রাকৃতিক সৌন্দর্য এবং শিক্ষার কেন্দ্র হিসেবে বিশেষ পরিচিত। এখানকার প্রাচীন স্থাপত্য, সিল্ক, আম, এবং শিক্ষার প্রতিষ্ঠানগুলির জন্য এটি দেশের অন্যতম গুরুত্বপূর্ণ শহর। যদি আপনি ঐতিহাসিক স্থানগুলি দেখতে চান, প্রাকৃতিক সৌন্দর্য উপভোগ করতে চান বা সাংস্কৃতিক ঐতিহ্য সম্পর্কে জানতে চান, তাহলে রাজশাহী একটি আদর্শ গন্তব্য।</p>
+    </div><br><br>
+
+    <div style="padding: 25px;">
+        <p style="text-align: justify;padding: 25px; color: white;border-radius: 10px; background-color: rgb(55, 55, 56);">রাজশাহী, বাংলাদেশের উত্তর-পশ্চিম অঞ্চলের একটি অত্যন্ত ঐতিহাসিক এবং সাংস্কৃতিক শহর। এখানে নানা ধরনের প্রাকৃতিক সৌন্দর্য এবং ঐতিহাসিক স্থাপনা রয়েছে যা পর্যটকদের আকর্ষণ করে।
+    </div><br><br>
+
+    <div style="padding: 25px; display: flex;justify-content: center;">
+        <p style="text-align: justify;padding: 25px; color: white;border-radius: 10px; background-color: rgb(55, 55, 56);">রাজশাহীতে কিছু জনপ্রিয় স্থান নিচে উল্লেখ করা হলো:
+    </div><br><br>
+<!-- Puthia_Temple_Complex -->
+        <div
+            style="display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 30px">
+            <img src="./rajshahi city/Putia_Boro_Shiv_Mandir_2.jpg" height="300" alt="">
+            <h1 style="background-color: aliceblue; color: ;border-radius: 10px;padding: 10px;">পুঠিয়া মন্দির কমপ্লেক্স</h1>
+            <p style="background-color: #525050; border-radius: 10px; text-align: justify;padding: 25px; color: aliceblue;">বর্ণনা: পুথিয়া মন্দির কমপ্লেক্সটি বাংলাদেশের অন্যতম ঐতিহাসিক হিন্দু মন্দিরের স্থান। এখানে শিব মন্দির, রাণী ভবনসহ একাধিক পুরাতন মন্দির রয়েছে। মন্দিরগুলোর স্থাপত্য খুবই সুন্দর এবং ঐতিহ্যপূর্ণ।
+                বিশেষ আকর্ষণ: মন্দিরগুলোর খোদাই করা অলঙ্করণ এবং স্নিগ্ধ পরিবেশ।<a href="https://en.wikipedia.org/wiki/Puthia_Temple_Complex" target="_blank">About more</a>
+            </p>
+    </div>
+    </div><br><br><br>
+    <!-- varendro meuseum -->
+    <div
+        style="display: flex; flex-direction: column;justify-content: center; align-items: center;padding: 30px">
+        <img src="./rajshahi city/ভারেন্দ্র গবেষণা জাদুঘরhy.jpg" height="300" alt="">
+        <h1 style="background-color: rgb(255, 255, 255);border-radius: 10px;padding: 10px;">বরেন্দ্র গবেষণা জাদুঘর</h1>
+        <p style="text-align: justify;padding: 25px;color: aliceblue;background-color: #525050; border-radius: 10px">বর্ণনা: রাজশাহীর ভারেন্দ্র গবেষণা জাদুঘরটি বাংলাদেশের অন্যতম পুরাতন এবং সমৃদ্ধ একটি জাদুঘর। এখানে প্রাচীন মূর্তি, মুদ্রা, পুঁথি, কাপড়সহ বিভিন্ন ঐতিহাসিক ও সাংস্কৃতিক বস্তু সংরক্ষিত রয়েছে।
+            বিশেষ আকর্ষণ: এখানে প্রাচীন বাংলা সংস্কৃতির ইতিহাস নিয়ে বিস্তারিত ধারণা পাওয়া যায়।
+            <a href="https://bn.wikipedia.org/wiki/%E0%A6%AC%E0%A6%B0%E0%A7%87%E0%A6%A8%E0%A7%8D%E0%A6%A6%E0%A7%8D%E0%A6%B0_%E0%A6%97%E0%A6%AC%E0%A7%87%E0%A6%B7%E0%A6%A3%E0%A6%BE_%E0%A6%9C%E0%A6%BE%E0%A6%A6%E0%A7%81%E0%A6%98%E0%A6%B0" target="_blank">About more</a>
+        </p>
+    </div><br><br><br>
+    <!-- bogura -->
+    <div
+        style="display: flex;flex-direction: column;justify-content: center;align-items: center; padding: 30px;">
+        <img src="./rajshahi city/Bogra (Mahasthangarh).jpg" height="300" alt="">
+        <h1 style="background-color: rgb(255, 255, 255);border-radius: 10px;padding: 10px;">বগুড়া (মহাস্থানগড়)</h1>
+        <p style="text-align: justify;padding: 25px;color: aliceblue;background-color: #525050; border-radius: 10px">বর্ণনা: রাজশাহীর কাছে অবস্থিত মহাস্থানগড় বাংলাদেশের অন্যতম প্রাচীন প্রত্নতাত্ত্বিক স্থল। এটি এক সময় মৌর্য যুগের একটি সমৃদ্ধ শহর ছিল।
+            বিশেষ আকর্ষণ: এখানে অবস্থিত বিভিন্ন পুরাতন মন্দির, দুর্গ এবং খোদাই করা লেখাগুলি প্রাচীন বাংলা সভ্যতার গুরুত্বপূর্ণ নিদর্শন।
+            <a href="https://bn.wikipedia.org/wiki/%E0%A6%AE%E0%A6%B9%E0%A6%BE%E0%A6%B8%E0%A7%8D%E0%A6%A5%E0%A6%BE%E0%A6%A8%E0%A6%97%E0%A6%A1%E0%A6%BC" target="_blank">About More</a>
+        </p>
+    </div><br><br>
+    <!-- padma river -->
+    <div
+        style="display: flex;flex-direction: column;align-items: center;padding: 30px">
+        <img src="./rajshahi city/পদ্মা নদী.jpg" height="300" alt="">
+        <h1 style="background-color: burlywood;border-radius: 10px;padding: 10px;">পদ্মা নদী</h1>
+        <p style="text-align: justify;padding: 25px;color: aliceblue;background-color: #525050; border-radius: 10px">বর্ণনা: পদ্মা নদী বাংলাদেশের অন্যতম প্রধান নদী এবং রাজশাহীর অন্যতম প্রধান প্রাকৃতিক সৌন্দর্যের স্থান। নদীর তীরে বিউটি স্পট এবং নৌকা ভ্রমণের সুযোগ রয়েছে।
+            বিশেষ আকর্ষণ: পদ্মা নদীর তীরে সূর্যাস্ত এবং সূর্যোদয়ের দৃশ্য মনোরম। নদীর পাড়ে এক শান্ত পরিবেশে সময় কাটানো যায়।
+            <a href="https://bn.wikipedia.org/wiki/%E0%A6%AA%E0%A6%A6%E0%A7%8D%E0%A6%AE%E0%A6%BE_%E0%A6%A8%E0%A6%A6%E0%A7%80" target="_blank">About More</a>
+        </p>
+    </div>
+    <!-- Rajshahi Silk Factory -->
+    <div
+        style="display: flex;flex-direction: column;align-items: center;padding: 30px">
+        <img src="./rajshahi city/Rajshahi Silk Factory.jpg" height="300" alt="">
+        <h1 style="background-color: rgb(255, 255, 255);border-radius: 10px;padding: 10px;">রাজশাহী সিল্ক ফ্যাক্টরি</h1>
+        <p style="text-align: justify; padding: 25px; color: aliceblue;background-color: #525050; border-radius: 10px">বর্ণনা: রাজশাহী সিল্ক ফ্যাক্টরিটি বাংলাদেশের সেরা সিল্ক তৈরির প্রতিষ্ঠানগুলির মধ্যে একটি। এখানে সিল্ক উৎপাদনের পুরো প্রক্রিয়া দেখে আসা যায়।
+            বিশেষ আকর্ষণ: আপনি এখানে হাতে বোনা সুন্দর সিল্ক পণ্য, যেমন শাড়ি, রুমাল, এবং স্কার্ফ কিনতে পারবেন।<a
+                href="https://en.wikipedia.org/wiki/Rajshahi_silk" target="_blank">About more...</a> </p><br>
+    </div>
+<!-- rajshahi university -->
+<div style="display: flex;flex-direction: column;align-items: center;padding: 30px;">
+    <img src="./rajshahi city/রাজশাহী বিশ্ববিদ্যালয়.jpg" height="300" alt="">
+    <h1 style="background-color: bisque;border-radius: 10px;padding: 10px;">রাজশাহী বিশ্ববিদ্যালয়</h1>
+    <p style="text-align: justify;padding: 25px;color: azure;background-color: #525050; border-radius: 10px">রাজশাহী বিশ্ববিদ্যালয়টি দেশসেরা শিক্ষা প্রতিষ্ঠানগুলোর মধ্যে একটি এবং তার ক্যাম্পাসটি অত্যন্ত সুন্দর। <a href="https://bn.wikipedia.org/wiki/%E0%A6%B0%E0%A6%BE%E0%A6%9C%E0%A6%B6%E0%A6%BE%E0%A6%B9%E0%A7%80_%E0%A6%AC%E0%A6%BF%E0%A6%B6%E0%A7%8D%E0%A6%AC%E0%A6%AC%E0%A6%BF%E0%A6%A6%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%B2%E0%A6%AF%E0%A6%BC" target="_blank">About more</a></p><br>
+</div>
+
+
+
+    <footer style="text-align: center; color: rgb(255, 255, 255); background-color: black; padding: 5px;">&copy; Created
+        by Tawhid
+    </footer>
+
+
+</body>
+
+</html>
